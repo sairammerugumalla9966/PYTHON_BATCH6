@@ -55,4 +55,5 @@ git pull origin main
 
 # git add filename.py or git add .
 # git commit -m "commit message"
-# git 
+# git push origin main or git push
+#git pull origin main or git pull
