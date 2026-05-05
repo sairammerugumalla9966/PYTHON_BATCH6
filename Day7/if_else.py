@@ -116,7 +116,7 @@ else:
 
 #else :
     # block of code 
-'''
+
 
 user_name =input("enter your username : ")
 
@@ -129,4 +129,24 @@ if user_name == "Rocky9966":
 
 else:
     print("user not found")
-    
+'''
+# check balance 
+
+balance = 50000
+amount = 0
+if amount <= balance:
+    if amount > 0 :
+        print("withdraw successful")
+    else: 
+        print("invalid amount")
+
+else: 
+    print("insufficent balance")
+
+
+
+
+
+
+
+
