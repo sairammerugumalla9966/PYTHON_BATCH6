@@ -118,3 +118,30 @@ else :
     print(num , "is not a prime number")
 
 
+# whike loop : write a program to find first 10 prime numbers 
+# 2 , 3 , 5 , 7 , 11 , 13 , 17 , 19 , 23 , 29 
+num = 2
+count = 0
+while count < 10:
+    i=1
+    factor = 0
+    while i <= num:
+        if num % i == 0:
+            factor += 1
+        i+=1
+
+    if factor == 2:
+        print(num)
+        count +=1
+
+    num +=1
+
+
+
+
+
+
+
+
+
+
