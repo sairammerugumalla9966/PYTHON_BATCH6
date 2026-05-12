@@ -27,7 +27,6 @@ print("python" + " Training")  # concatination
 print("hi " * 3) # repetation 
 
 
-
 # Strings Methods : inbuilt functions avaiable for string objects 
 
 name = "sairam"
