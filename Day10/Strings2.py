@@ -61,7 +61,7 @@ hero = "Vijay Devarakonda"
 
 for i in range(len(hero)):
     print(hero[i])
-'''
+
 
 
 
@@ -86,4 +86,66 @@ print(hero[:])
 print(hero[::-1]) # reverse of a string 
 
 print(hero[6:10])
+
+
+
+# String formatting : allows inserting variables inside the strings dynamically 
+
+
+
+# print(name," is a superman")
+
+# Sairam is a superman 
+# sreenadh is a superman 
+
+# print("name is a Batman") # name is a Batman 
+
+# python supports :
+
+# f-strings  (latest)
+
+#name = input("enter your name : ")
+#age = int(input("enter your age : "))
+
+# print(f"My name is {name} and I'm {age} years old.")
+
+
+rice = 1500
+atta = 500
+veggies = 400
+oil = 1000
+
+print(f"total bill amount :{rice+atta+veggies+oil}")
+
+
+name = "python training"
+print(f"{name.upper()} is very easy.")
+
+a = 5
+print(f"square of a is : {a*a}")
+
+
+# format() 
+
+print("Welcome {}".format("Rocky"))
+
+print("sum of numbers : {}".format(100+200+300+780+920))
+
+print("{1} Welcome {0} {2}".format("Rocky" , "Good morning" ,"superman"))
+
+print("Welcome {name} hi {jobrole}".format(name = "Rocky" , jobrole = "Trainer"))
+
+'''
+
+# % formatting (old style)
+
+name = "sairam"
+age = 29
+print("my name is %s" %name)
+print("my age is %d" %age)
+print("my name is %s and my age is %d" %("Rocky",29))
+
+
+
+
 
