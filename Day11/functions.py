@@ -72,3 +72,4 @@ print(add_func(77,66,97))
 # if you are not passing same number of arguments 
 # which are declared as parameters in a function , then you'll get an error 
 
+
