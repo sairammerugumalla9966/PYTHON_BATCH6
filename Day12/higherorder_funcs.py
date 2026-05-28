@@ -37,7 +37,7 @@ def division(a,b):
 operation = calci(difference,25,15)
 print(operation)
 
-'''
+
 # In-built Higher order functions 
 # map() : applies a function to each every element of  sequence 
 
@@ -69,8 +69,33 @@ def sum(x,y):
 res = reduce(sum,l2)
 print(res)
 
+'''
+
+# Lambda function :  ananomous or single line function (nameless functions)
+# simple logical functions 
+#
+''' 
+def is_even(x):
+    if x%2==0:
+        print("even")
+    else:
+        print("not even")
+
+is_even(5)
+'''
+# lambda function syntax 
+
+# (lambda parameters : expresssion)(arguments)  ----> def + calling 
+
+(lambda num : print("even") if num % 2==0 else print("not even"))(9)
 
 
+bonus = lambda salary : salary + 5000
+print(bonus(25000))
+
+msg= input("enter your msg")
+upper = lambda msg : msg.upper()
+print(upper(msg))
 
 
 
