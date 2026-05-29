@@ -35,9 +35,9 @@
 
 # in python everything is an object and that objects comes from a class 
 
-print(type(10))   # 10 is interger object 
-print(type(10.77)) 
-print(type(True)) 
+# print(type(10))   # 10 is interger object 
+# print(type(10.77)) 
+# print(type(True)) 
 
 
 # why OOPS ???
@@ -91,19 +91,114 @@ obj2 = SampleClass()
 print("from obj2: ",obj2.a)
 
 
-'''
+
 
 class SampleClass:
     a=100
     b=200
-    def samplemethod(self):
+    def samplemethod(self,x):
         print("this is a method from this class")
+        return x
 
 obj = SampleClass()
 print(obj.a)
 print(obj.b)
-obj.samplemethod()
+print(obj.samplemethod(10))
 
+
+class SampleClass:
+    a=100
+    b=200
+    def samplemethod(self,x):
+        print("this is a method from this class")
+        return x
+
+print(SampleClass.a)
+print(SampleClass.samplemethod(1000,200))
+
+'''
+
+# Constructor (__init__() method ) : this method which is declared inside a class and when an 
+# object is created , __init__() method will be excecuted automatically 
+
+# this __init__() method is used to store tha initial attributes in an object 
+
+# syntax :
+
+'''
+def  __init__(self,para1 ,para2,para3 ,............, paran):
+    self.para1 = para1
+    self.para2 = para2
+    self.para3 = para3
+    .
+    .
+    .
+    .
+    self.paran = paran
+
+
+class ConstructorClass:
+    def  __init__(self):
+        print("constructor is called automatically , when an object is created")
+
+    def demo(self):
+        print("this is normal method")
+
+obj = ConstructorClass()
+obj.demo()
+
+obj1 = ConstructorClass()
+
+obj2 = ConstructorClass()
+
+
+
+class BankAccount:
+
+    def __init__(self,ACno,Name,IFSCcode ,balance):
+        self.ACno = ACno
+        self.Name = Name
+        self.IFSCcode=IFSCcode
+        self.balance=balance
+
+    def display(self):
+        print(self.ACno ,self.Name,self.IFSCcode,self.balance)
+
+Rocky = BankAccount(1234567890,"Rocky Bhai","SBIN001976",50000)
+Rocky.display()
+
+Sreenadh = BankAccount(990088007700,"SREE RAM","SBIN001966",100000)
+Sreenadh.display()
+
+'''
+
+class BankAccount:
+
+    def __init__(self,ACno,Name,IFSCcode ,balance):
+        self.ACno = ACno
+        self.Name = Name
+        self.IFSCcode=IFSCcode
+        self.balance=balance
+
+    def display(self):
+        print(self.ACno ,self.Name,self.IFSCcode,self.balance)
+
+    def withdraw(self,amount):
+        self.balance -= amount
+        print(self.balance)
+
+    def deposite(self,amount):
+        self.balance += amount
+        print(self.balance)
+
+    def checkbalance(self):
+        print(self.balance)
+
+Sreenadh = BankAccount(990088007700,"SREE RAM","SBIN001966",100000)
+Sreenadh.display()
+Sreenadh.checkbalance()
+Sreenadh.withdraw(5000)
+Sreenadh.deposite(10000)
 
 
 
