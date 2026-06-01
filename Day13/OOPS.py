@@ -173,17 +173,18 @@ Sreenadh.display()
 '''
 
 class BankAccount:
-
+    a = 10 # static or class variable 
     def __init__(self,ACno,Name,IFSCcode ,balance):
         self.ACno = ACno
         self.Name = Name
-        self.IFSCcode=IFSCcode
+        self.IFSCcode=IFSCcode     # Instance variables 
         self.balance=balance
 
     def display(self):
         print(self.ACno ,self.Name,self.IFSCcode,self.balance)
 
     def withdraw(self,amount):
+        b = 200  #--- > local variable 
         self.balance -= amount
         print(self.balance)
 
