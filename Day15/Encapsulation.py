@@ -1,3 +1,4 @@
+
 # Encapsulation : binding data and methods together in a single unit called as class. 
 # and also protect the data form accessing 
 
@@ -5,9 +6,7 @@
 # code will be organised and clean 
 # prevent the data from accidental deletion 
 
-
 # bank account 
-
 # withdraw 
 # deposite 
 # check balance 
@@ -79,7 +78,6 @@ obj2 = Child1()
 print(obj2._protecteddata)   # AttributeError: 'Child1' object has no attribute '_protecteddata'
 obj2.method1()
 
-'''
 
 # private access specifiers : can only be accessed by the class it is decalred 
 #  
@@ -99,6 +97,48 @@ obj1 = Parent()
 Parent.__privatedata = "sairam"
 # print(obj1.__privatedata)
 obj1.protected_method()
+
+
+'''
+
+class Bank:
+
+    def __init__(self):
+        self.__balance = 10000
+
+    def deposite(self,amount):
+        self.__balance += amount
+
+    def withdraw(self,amount):
+        self.__balance -= amount
+
+    def check_balance(self):
+        return self.__balance
+    
+b = Bank()
+# print(b.__balance)    # private attributes can not be access through object 
+# but they can be accessesd through methods 
+
+print(b.check_balance())
+
+b.deposite(5000)
+
+print(b.check_balance())
+
+b.withdraw(2000)
+
+print(b.check_balance())
+
+
+
+
+    
+
+    
+
+
+
+
 
 
 
