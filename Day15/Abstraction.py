@@ -1,10 +1,7 @@
 # Abstraction in OOPS python 
-
 # means hiding implimentation details and showing only essential features 
 
-
 # Car
-
 # you know : start car , stop , accelerate , brake 
 # what you dont know : engine combustion , fuel injection , piston moment 
 
@@ -62,3 +59,6 @@ obj2.stop()
 # Abstract method : if a method is declared without implimentation logic , then it is called abstract method 
 
 # abstract class : if a class contains one or more abstract methods ,then that class is called as abstract class 
+
+
+
